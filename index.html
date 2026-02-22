@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juvensen Jules | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Juvensen Jules - Product Manager, Strategic Thinker, Problem Solver.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Starfield canvas -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <a href="#hero" class="nav-logo">JJ</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero">
+    <div class="hero-content">
+      <p class="hero-greeting mono-accent fade-in" style="animation-delay: 0ms">Hello, I'm</p>
+      <h1 class="hero-name fade-in" style="animation-delay: 200ms">Juvensen Jules</h1>
+      <h2 class="hero-title fade-in" style="animation-delay: 400ms">
+        <span class="typing-text"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-subtitle fade-in" style="animation-delay: 600ms">Turning ideas into products people love.</p>
+      <div class="hero-cta fade-in" style="animation-delay: 800ms">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="scroll-indicator fade-in" style="animation-delay: 1000ms">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="mono-accent">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hey, I'm Jules, a Product Manager with 4+ years of experience
+            learning in real time how to build products that people love.
+          </p>
+          <p>
+            In my spare time, I love traveling, trying new foods, baking,
+            taking really long walks, and practicing boredom.
+          </p>
+          <p>
+            If you have any cool ideas you want to collaborate on, or just want
+            to network and get in touch, please send me an email at
+            <a href="mailto:Juvensenjules@gmail.com">Juvensenjules@gmail.com</a>.
+          </p>
+        </div>
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <img src="assets/images/profile.jpeg" alt="Juvensen Jules">
+            <div class="image-glow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-grid reveal">
+        <span class="skill-tag">Product Strategy</span>
+        <span class="skill-tag">Roadmapping</span>
+        <span class="skill-tag">User Research</span>
+        <span class="skill-tag">PRDs</span>
+        <span class="skill-tag">Cross-functional Leadership</span>
+        <span class="skill-tag">Trust &amp; Safety</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Prompt Engineering</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="mono-accent">02.</span> Projects
+      </h2>
+      <div class="projects-grid">
+
+        <!-- Project 1: Game Theory Sandbox -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://gametheorygames.netlify.app/" class="project-link" aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Game Theory Sandbox</h3>
+            <p class="project-description">An interactive educational platform for exploring strategic games, visualizing payoff matrices, and simulating classic game theory scenarios in real time.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Framer Motion</span>
+              <span class="tech-tag">KaTeX</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: DeepDive -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">DeepDive</h3>
+            <p class="project-description">A high-intensity iOS focus app that locks your phone during work sessions, enforcing deep focus with structured timers, session quality tracking, and streak stats.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Swift</span>
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">SwiftData</span>
+              <span class="tech-tag">iOS 17+</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Food Rating App -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="6" y1="8" x2="6" y2="16"/><line x1="10" y1="8" x2="10" y2="16"/><line x1="14" y1="8" x2="14" y2="16"/><line x1="18" y1="8" x2="18" y2="16"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Food Rating App</h3>
+            <p class="project-description">A mobile app that scans product barcodes, calculates health scores from 0-100, flags nutritional red flags, and suggests healthier swap alternatives.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Swift</span>
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">AVFoundation</span>
+              <span class="tech-tag">Vision</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: BFFCRM -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">BFFCRM</h3>
+            <p class="project-description">An iOS CRM app built with SwiftUI for managing customer relationships, organizing contacts, and tracking interactions in a clean mobile interface.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Swift</span>
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">CoreData</span>
+              <span class="tech-tag">iOS</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section resume">
+    <div class="container">
+      <div class="resume-header">
+        <h2 class="section-heading">
+          <span class="mono-accent">03.</span> Resume
+        </h2>
+        <a href="assets/resume.pdf" class="btn btn-outline btn-sm resume-download" download>Download PDF</a>
+      </div>
+
+      <div class="resume-layout">
+        <!-- Main column: Timeline -->
+        <div class="resume-main">
+          <h3 class="resume-category">Experience</h3>
+          <div class="timeline">
+
+            <!-- Pinterest -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Product Manager, Identity &amp; Age Verification</h4>
+                  <span class="timeline-date mono-accent">03/2025 - Present</span>
+                </div>
+                <p class="timeline-company">Pinterest &middot; Trust and Safety</p>
+                <ul class="timeline-details">
+                  <li>Drove account access &amp; support cost reduction strategy, authoring PRDs and shipping deflection features contributing to a 15% annual ticket volume reduction target</li>
+                  <li>Owned 2-year age assurance strategy &amp; global compliance, securing executive sign-off for Australia, Brazil, and Texas</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- LinkedIn - Account Recovery -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Product Manager, Account Recovery</h4>
+                  <span class="timeline-date mono-accent">08/2023 - 03/2025</span>
+                </div>
+                <p class="timeline-company">LinkedIn &middot; Trust and Safety</p>
+                <ul class="timeline-details">
+                  <li>Improved account recovery accuracy, reducing false positives from 26% to 10% and false negatives from 20% to 4%, ensuring legitimate users regained access faster through biometrics and enhanced AI models</li>
+                  <li>Decreased operational costs by 10% and boosted platform availability from 94% to 99%</li>
+                  <li>Led a 3-day strategy workshop, developing a 2-year vision, mission, and multiple roadmaps aligned to company objectives</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- LinkedIn - Enterprise Jobs -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Product Manager, Enterprise Jobs</h4>
+                  <span class="timeline-date mono-accent">09/2022 - 08/2023</span>
+                </div>
+                <p class="timeline-company">LinkedIn &middot; Hirers Business Unit</p>
+                <ul class="timeline-details">
+                  <li>Shipped UI improvements and upsells that increased customer budget spend by 22%</li>
+                  <li>Led sunsetting of a paid-for-performance product, migrating $30M in contracts while maintaining customer experience</li>
+                  <li>Led email migration for the entire hiring platform (2M emails/week) with minimal customer complaints</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Datadog - Synthetic Monitoring -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">Product Manager, Synthetic Monitoring</h4>
+                  <span class="timeline-date mono-accent">02/2022 - 08/2022</span>
+                </div>
+                <p class="timeline-company">Datadog</p>
+                <ul class="timeline-details">
+                  <li>Contributed to a prioritized feature roadmap for MVP development using market and customer research</li>
+                  <li>Delivered features that increased customer test creation efficiency for complex scenarios</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Datadog - APM Intern -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">PM Intern, Application Performance Monitoring</h4>
+                  <span class="timeline-date mono-accent">05/2021 - 08/2021</span>
+                </div>
+                <p class="timeline-company">Datadog</p>
+                <ul class="timeline-details">
+                  <li>Created an end-to-end user journey guide, discovering gaps in error tracking and upsell opportunities</li>
+                  <li>Collaborated with data analysts, designers, and engineers to build an MVP; pitched to SVP of Product</li>
+                  <li>Improved user retention on the APM Service page by ~10%</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Lyft - TBS -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">TPM Intern, Transit, Bikes &amp; Scooters</h4>
+                  <span class="timeline-date mono-accent">09/2021 - 12/2021</span>
+                </div>
+                <p class="timeline-company">Lyft &middot; Software Technical Program Management</p>
+                <ul class="timeline-details">
+                  <li>Lead TPM for the Lyft Charging Station Program, supporting the Lyft Cosmo e-bike (TIME Best Inventions 2021)</li>
+                  <li>Constructed program plan with stakeholder syncs, timeline, test plan, and weekly ELT updates</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Lyft - L5 -->
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">TPM Intern, Level 5 (Autonomous Vehicles)</h4>
+                  <span class="timeline-date mono-accent">06/2020 - 07/2020</span>
+                </div>
+                <p class="timeline-company">Lyft</p>
+                <ul class="timeline-details">
+                  <li>Led implementation of the Virtual Validation Program for Lyft's autonomous code stack</li>
+                  <li>Ran tri-weekly alignment meetings and weekly sprints of 5+ stakeholders</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <h3 class="resume-category">Education</h3>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h4 class="timeline-role">B.S. Industrial and Systems Engineering</h4>
+                  <span class="timeline-date mono-accent">Graduated Dec 2021</span>
+                </div>
+                <p class="timeline-company">University of Southern California &middot; Los Angeles, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar: Skills -->
+        <div class="resume-sidebar">
+          <h3 class="resume-category">Product Skills</h3>
+          <div class="skill-bar-group">
+            <div class="skill-bar reveal">
+              <div class="skill-bar-label">
+                <span>Product Strategy &amp; Roadmapping</span>
+                <span class="mono-accent">95%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar reveal">
+              <div class="skill-bar-label">
+                <span>User Research &amp; PRDs</span>
+                <span class="mono-accent">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar reveal">
+              <div class="skill-bar-label">
+                <span>Cross-functional Leadership</span>
+                <span class="mono-accent">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar reveal">
+              <div class="skill-bar-label">
+                <span>Data Analysis &amp; SQL</span>
+                <span class="mono-accent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar reveal">
+              <div class="skill-bar-label">
+                <span>Figma &amp; Prototyping</span>
+                <span class="mono-accent">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="resume-category">Technical Skills</h3>
+          <div class="interest-tags" style="margin-bottom: var(--space-lg);">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">BASH</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+
+          <h3 class="resume-category">Interests</h3>
+          <div class="interest-tags">
+            <span class="skill-tag">Traveling</span>
+            <span class="skill-tag">Football</span>
+            <span class="skill-tag">Making T-Shirts</span>
+            <span class="skill-tag">Long Walks</span>
+            <span class="skill-tag">Art Museums</span>
+            <span class="skill-tag">Psychology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-heading">
+        <span class="mono-accent">04.</span> Get In Touch
+      </h2>
+      <p class="contact-text reveal">
+        I'm currently open to new opportunities. Whether you have a question
+        or just want to say hello, feel free to reach out and I'll do my best
+        to get back to you.
+      </p>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" ">
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" ">
+            <label for="email">Your Email</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <div class="social-links reveal">
+        <a href="https://github.com/jules541" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:Juvensenjules@gmail.com" aria-label="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed & Built by Juvensen Jules</p>
+    <p class="mono-accent">&copy; 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
